@@ -20,13 +20,13 @@ default     = []
 interactive = []
 
 [dependencies]
-cli-ui-derive = { path = "./cli-ui-derive" }
-anstream       = "0.6"
+cli-ui-derive = { path = "./cli-ui-derive", version = "0.1.0" }
+anstream       = "1"
 anstyle        = "1"
-crossterm      = "0.28"
+crossterm      = "0.29"
 
 [target.'cfg(windows)'.dependencies]
-windows-sys = { version = "0.52", features = [
+windows-sys = { version = "0.61", features = [
     "Win32_System_Console",
     "Win32_Foundation",
 ] }
