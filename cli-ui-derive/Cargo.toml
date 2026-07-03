@@ -1,7 +1,16 @@
 [package]
-name    = "cli-ui-derive"
-version = "0.1.0"
-edition = "2021"
+name         = "cli-ui-derive"
+version      = "0.1.0"
+edition      = "2021"
+rust-version = "1.70"
+authors      = ["NameOfShadow <NameOfShadow@users.noreply.github.com>"]
+description  = "Derive macros for the cli-ui crate (`#[derive(CliOptions)]`, `#[derive(CliCommand)]`)"
+documentation = "https://docs.rs/cli-ui-derive"
+repository   = "https://github.com/NameOfShadow/cli-ui"
+homepage     = "https://github.com/NameOfShadow/cli-ui"
+license      = "MIT OR Apache-2.0"
+keywords     = ["cli", "derive", "macros", "clap-alternative"]
+categories   = ["command-line-interface"]
 
 [lib]
 proc-macro = true
