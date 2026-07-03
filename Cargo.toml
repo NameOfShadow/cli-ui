@@ -1,0 +1,32 @@
+[package]
+name         = "cli-ui"
+version      = "0.1.0"
+edition      = "2021"
+rust-version = "1.70"
+authors      = ["NameOfShadow <NameOfShadow@users.noreply.github.com>"]
+description  = "Styled CLI framework — typed argument parsing, themed help, and clack-style interactive prompts"
+documentation = "https://docs.rs/cli-ui"
+repository   = "https://github.com/NameOfShadow/cli-ui"
+homepage     = "https://github.com/NameOfShadow/cli-ui"
+readme       = "README.md"
+license      = "MIT OR Apache-2.0"
+keywords     = ["cli", "prompt", "tui", "interactive", "clack"]
+categories   = ["command-line-interface"]
+exclude      = ["docs/*", "test.csv", "test.pem", "mini_cargo"]
+
+[features]
+# Backwards-compat alias — the interactive engine is on by default.
+default     = []
+interactive = []
+
+[dependencies]
+cli-ui-derive = { path = "./cli-ui-derive" }
+anstream       = "0.6"
+anstyle        = "1"
+crossterm      = "0.28"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.52", features = [
+    "Win32_System_Console",
+    "Win32_Foundation",
+] }

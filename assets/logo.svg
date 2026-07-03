@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="cli-ui logo">
+  <title>cli-ui</title>
+
+  <!-- Background: rounded dark square, like clack's intro pill -->
+  <rect width="160" height="160" rx="28" ry="28" fill="#0b0f1a"/>
+
+  <!-- Active prompt glyph ◆ — the visual signature of clack-style prompts -->
+  <path d="M80 32 L120 76 L80 120 L40 76 Z"
+        fill="#22d3ee"/>
+
+  <!-- Inner highlight on the diamond -->
+  <path d="M80 44 L108 76 L80 108 L52 76 Z"
+        fill="#67e8f9" opacity="0.18"/>
+
+  <!-- Prompt frame bar │ extending below the diamond -->
+  <line x1="80" y1="124" x2="80" y2="140"
+        stroke="#22d3ee" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+</svg>

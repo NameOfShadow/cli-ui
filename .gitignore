@@ -1,0 +1,24 @@
+# Build artifacts
+/target
+**/target
+
+# Cargo lockfile — committed for binaries, ignored for libraries.
+# cli-ui is a library, so we don't track it.
+Cargo.lock
+
+# Editor / IDE
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Coverage / profiling
+*.profraw
+tarpaulin-report.html
+
+# Local test artifacts
+/test.csv
+/test.pem
